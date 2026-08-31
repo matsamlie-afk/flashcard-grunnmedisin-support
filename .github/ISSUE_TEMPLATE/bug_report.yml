@@ -1,0 +1,50 @@
+name: Report an app problem
+description: Report a reproducible problem without sharing personal data or card content.
+title: "[App problem] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue will be public. Do not include names, contact details, health data, patient data, account data, or text from your cards.
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: For example, 1.0.0 (1).
+      placeholder: 1.0.0 (1)
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS version
+      placeholder: iOS 26.6
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Describe only the app actions needed to reproduce the problem. Replace card text with generic placeholders.
+      placeholder: |
+        1. Open My cards
+        2. Tap ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+      description: Explain what you expected and what happened instead.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy-confirmation
+    attributes:
+      label: Public issue confirmation
+      options:
+        - label: I have not included personal data, health data, patient data, account data, or card content.
+          required: true

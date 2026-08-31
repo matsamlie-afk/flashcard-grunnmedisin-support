@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy policy
+    url: https://matsamlie-afk.github.io/flashcard-grunnmedisin-support/privacy/
+    about: Read how the app handles local card data before opening a public issue.
